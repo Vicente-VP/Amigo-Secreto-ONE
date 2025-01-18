@@ -9,6 +9,7 @@ function adicionarAmigo(){
     }else{
         amigos.push(nome);
         atualizarLista(nome);
+        limparCampo();
     }
 }
 
@@ -34,4 +35,9 @@ function sortearAmigo(){
         lista.innerHTML = "";
         resultado.innerHTML = `Seu amigo secreto é ${amigos[Math.floor(Math.random() * amigos.length)]}`;
     }
+}
+
+function limparCampo() {
+    let nome = document.getElementById('amigo');
+    nome.value = '';
 }
