@@ -29,6 +29,8 @@ function adicionarAmigo(){
 
 Nela nós verificamos se o input tem valor nulo, caso ele tenha da um alerta pro usuário pedindo que ele digite o nome de um amigo, senão ele adiciona o amigo na lista e chama mais duas funções `atualizarLista()` e `limparCampo()` que serão explicadas mais a frente. 
 
+<img src="assets/TelaAdicionar.png" alt="tela inicial do Site">
+
 
 **<h3 style="font-family: Arial; font-size: 15px;">FUNÇÃO: `atualizarLista`</h3>**
 
@@ -49,6 +51,8 @@ function atualizarLista(nome){
 ```
 
 Nessa função nós criamos um novo elemento `li` e adicionamos o nome adicionado nele, após isso fizemos um loop `for` que continua até o tamanho do array `amigos`. No loop nós adicionamos o elemento `li` na varável lista `let lista = document.getElementById('listaAmigos');` que seria o nosso `ul`.
+
+<img src="assets/TelaAdicionar.png" alt="tela inicial do Site">
 
 **<h3 style="font-family: Arial; font-size: 15px;">FUNÇÃO: `limparCampo`</h3>**
 
@@ -81,3 +85,5 @@ Na função a primeira coisa que fazemos é checar se o tamanho do array que arm
 resultado.innerHTML = `Seu amigo secreto é ${amigos[Math.floor(Math.random() * amigos.length)]}`;
 ```
 Que sorteia um index aleatória do array amigos e adiciona em resultado.
+
+<img src="assets/TelaSorteio.png" alt="tela inicial do Site">
